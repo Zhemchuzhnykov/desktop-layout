@@ -4,16 +4,17 @@
 }
 
 .webpage {
-  width: 1440px;
+  min-width: 100vw;
   min-height: 100vh;
-  padding: 115px 132px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: #141b1c;
 }
 .webpage .price-card {
   background-color: #334247;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  margin-right: 18px;
   width: 380px;
   height: 770px;
   display: flex;
@@ -37,6 +38,9 @@
 }
 .webpage .price-card:nth-child(2) .price-card__price, .webpage .price-card:nth-child(2) .price-card__order-btn {
   background-color: #3A6BA5;
+}
+.webpage .price-card:last-child {
+  margin-right: 0;
 }
 .webpage .price-card:last-child .price-card__price, .webpage .price-card:last-child .price-card__order-btn {
   background-color: #EC632A;
