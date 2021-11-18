@@ -1,7 +1,114 @@
 * {
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+}
+
+.webpage {
+  width: 1440px;
+  min-height: 100vh;
+  padding: 115px 132px;
+  display: flex;
+  justify-content: space-between;
   background-color: #141b1c;
+}
+.webpage .price-card {
+  background-color: #334247;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  width: 380px;
+  height: 770px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.webpage .price-card:first-child > .price-card__price, .webpage .price-card:first-child .price-card__order-btn {
+  background-color: #5BB189;
+}
+.webpage .price-card:nth-child(2) {
+  position: relative;
+}
+.webpage .price-card:nth-child(2) .price-card__popular {
+  position: absolute;
+  display: block;
+  background-image: url("popular.png");
+  width: 104px;
+  height: 123px;
+  right: 0;
+  top: -18px;
+}
+.webpage .price-card:nth-child(2) .price-card__price, .webpage .price-card:nth-child(2) .price-card__order-btn {
+  background-color: #3A6BA5;
+}
+.webpage .price-card:last-child .price-card__price, .webpage .price-card:last-child .price-card__order-btn {
+  background-color: #EC632A;
+}
+.webpage .price-card__title {
+  margin: 0px;
+  margin-top: 33px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+}
+.webpage .price-card__subtitle {
+  margin: 0;
+  margin-bottom: 33px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.webpage .price-card__price {
+  margin: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+  line-height: 105px;
+  min-height: 105px;
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 700;
+}
+.webpage .price-card__description {
+  margin: 0;
+  margin-bottom: 40px;
+  width: 327px;
+  height: 36px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 15px;
+  color: #ffffff;
+}
+.webpage .price-card__options-list {
+  margin: 0;
+  margin-bottom: 39px;
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+.webpage .price-card__options-list .options-list__item {
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 15px;
+  padding-left: 22px;
+}
+.webpage .price-card__options-list .options-list__item:nth-child(odd) {
+  background-color: #2A3438;
+}
+.webpage .price-card .options-list .options-list__item-tick {
+  margin-right: 22px;
+  width: 15px;
+  height: 13px;
+}
+.webpage .price-card__order-btn {
+  width: 154px;
+  height: 40px;
+  border: 0;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=styles.css.map */
