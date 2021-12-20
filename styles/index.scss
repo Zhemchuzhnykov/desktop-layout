@@ -80,31 +80,6 @@
     margin: 0px 0px 40px 0px;
   }
 
-  &__options-list {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    margin: 0px 0px 39px 0px;
-
-    & .options-list__item {
-      font-size: 15px;
-      font-weight: 300;
-      line-height: 50px;
-      color: $white-text;
-      padding-left: 22px;
-
-      &:nth-child(odd) {
-        background-color: $list-item-dark;
-      }
-
-      &-tick {
-        width: 15px;
-        height: 13px;
-        margin-right: 22px;
-      }
-    }
-  }
-
   &__order-button {
     width: 154px;
     height: 40px;
@@ -137,4 +112,29 @@
     top:-18px;
   }
 
+}
+
+.options-list {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 39px 0px;
+
+  &__item {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 50px;
+    color: $white-text;
+    padding-left: 22px;
+
+    &:nth-child(odd) {
+      background-color: $list-item-dark;
+    }
+
+    &-tick {
+      width: 15px;
+      height: 13px;
+      margin-right: 22px;
+    }
+  }
 }
